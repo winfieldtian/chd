@@ -1,0 +1,59 @@
+CREATE TABLE motherboard(
+       brand CHAR(50),
+       name CHAR(50) UNIQUE,
+    cpu_socket_type CHAR(50),
+    num_memory_slots CHAR(50),
+    memory_standard CHAR(100),
+    max_memory_support CHAR(20),
+    num_pci_express CHAR(50),
+    sata CHAR (50),
+    usb CHAR (40),
+    usb_3 CHAR (40),
+    form CHAR (40),
+    power_pin CHAR (30)
+);
+
+CREATE TABLE processor(
+    brand CHAR(50),
+    name CHAR(50) UNIQUE,
+    price CHAR(30),
+    series CHAR (40),
+    cpu_socket_type CHAR (40),
+    multi_core CHAR (40),
+    frequency CHAR (50),
+    power CHAR (30),
+    integrated_graphics CHAR (50)
+);
+
+CREATE TABLE harddrive (
+    brand CHAR(50),
+    name CHAR(50) UNIQUE,
+    price CHAR(30),
+    series CHAR (40),
+   	interface CHAR (40),
+    capacity CHAR (20),
+    cache CHAR (20),
+    rpm CHAR (40)
+);
+
+CREATE TABLE memory (
+    brand CHAR(50),
+    name CHAR(50) UNIQUE,
+    price CHAR(30),
+    series CHAR (40),
+   	type CHAR (40),
+    capacity CHAR (20),
+    speed CHAR (40)
+);
+
+CREATE TABLE videocard (
+    brand CHAR(50),
+    name CHAR(50) UNIQUE,
+    price CHAR(30),
+    interface CHAR (40),
+    chipset_manf CHAR (50),
+    gpu CHAR (70),
+    clock CHAR (40),
+    memory_size CHAR (40),
+    memory_type CHAR (40)
+);
